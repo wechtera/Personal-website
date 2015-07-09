@@ -20,8 +20,8 @@ h3 {
 	color: rgb(115,115,115);
 }
 /*general bootstrap*/
-.container-fluid {
-	background-color: #FFFFF0;
+.main-cont {
+	background-color: #FFFFFE;
 	margin-top: 3%;
 	margin-left: 3%;
 	margin-right: 3%;
@@ -56,8 +56,13 @@ h3 {
 	margin-left: auto;
 	margin-right: auto;
 }
+#titles {
+	color: #4a4a4a;
+	font-size: 1.4em;
+}
 .introContainer {
 	width: 100%;
+	margin-top: 6.66em;
 }
 .details {
 	width: 80%;
@@ -74,7 +79,6 @@ h3 {
 .zoomBar {
 	width: 100%;
 	margin: 0 auto;
-	padding-bottom: 40px;
 }
 /* My picture information */
 .media {
@@ -83,8 +87,8 @@ h3 {
 	margin-right: 10%;
 }
 .my_Pic {
-	height:300px;
-	width: 200px;
+	height:25em;
+	width: 16.66667em;
 }
 .media-body {
 	padding-top: 5%;
@@ -92,11 +96,10 @@ h3 {
 }
 /*Skills*/
 .skills-container {
-	margin-top: 200px;
+	margin-top: 16.66667em;
 	margin-left: 5%;
-	height: 475px;
+	/*height: 46.583em;*/
 	width: 90%;
-	padding-bottom: 200px;
 }
 .list-padding {
 	padding-top: .1em;
@@ -132,21 +135,21 @@ h3 {
 /*Projects template*/
 .projects-container {
 	width: 100%;
-	height: 58.33em;
-	padding-top: 16.666em;
+
+	margin-top: 16.666em;
 }
 
 /*Education*/
 #education-container {
 	width: 100%;
-	height: 50em;
-	padding-top: 16.666em;
+
+	margin-top: 16.666em;
 }
 
 /*Footer*/
 #footer-bar {
-	margin-left: -15%;
-	width: 110%;
+	margin-left: 3%;
 	height: 4em;
+	width: 94%;
 	background-color: black;
 }
