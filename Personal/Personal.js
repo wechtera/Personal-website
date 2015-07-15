@@ -3,6 +3,15 @@ Router.map(function() {
 });
 
 if (Meteor.isClient) {
+	Template.body.events({
+		'click #gototop': function(e, templ) {
+			e.preventDefault();
+			$('html, body').animate({
+				scrollTop: $("#zoombar").offset().top
+			}, 800);
+			console.log("Clicked!!");
+		}
+	});
 	Template.zoombar.events({
 			//scrolling events
 		'click #zoomAbout': function(e, templ ) {
@@ -31,5 +40,17 @@ if (Meteor.isClient) {
 		}
 	});
 	Template.home.rendered = function() {
+		//Floating up button
+		var offset = 300;
+		var duration = 300;
+	//	$('.back-to-top').css({"display": "none"});
+		jQuery(window).scroll(function(){
+			if(jQuery(this).scrollTop() > offset) {
+				jQuery('.back-to-top').fadeIn(duration);
+			}
+			else {
+				jQuery('.back-to-top').fadeOut(duration);
+			}
+		});
 	};
 }

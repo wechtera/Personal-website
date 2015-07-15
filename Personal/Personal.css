@@ -1,6 +1,27 @@
 body {
 	background-color: rgb(58,58,58);
 }
+::-webkit-scrollbar {
+	display: none;
+}
+/* back to top button*/
+.back-to-top {
+	background: none;
+	margin: 0;
+	position: fixed;
+	bottom: 2%;
+	right: -.7em;
+	width: 3em;
+	height: 3em;
+	z-index: 100;
+	text-decoration: none;
+	color: #fffffe;
+	display: none;
+}
+
+.back-to-top i {
+  font-size: 2.5em;
+}
 /*font work*/
 p {
 	font-family: 'Lato', sans-serif;
@@ -19,12 +40,17 @@ h4 {
 h3 {
 	color: rgb(115,115,115);
 }
+ul {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	font-size: 1.0em;
+}
 /*general bootstrap*/
 .main-cont {
 	background-color: #FFFFFE;
-	margin-top: 3%;
-	margin-left: 3%;
-	margin-right: 3%;
+	margin-top: 2.5em;
+	margin-left: 2.5em;
+	margin-right: 2.5em;
 }
 /* Zoom bar line stuff eventually figure out how to make the line shorter and centered*/
 .col-sm-3.text-center.zoomLabels {
@@ -151,5 +177,8 @@ h3 {
 	margin-left: 3%;
 	height: 4em;
 	width: 94%;
-	background-color: black;
+	background-color: rgb(58,58,58);
+}
+.footer-text {
+	color: rgb(115,115,115);
 }
